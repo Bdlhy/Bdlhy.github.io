@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Git基础指令总结 | Bdlhy</title>
+  <title>常见HTTP状态码 | Bdlhy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="项目中必定会使用git,现在自己对git的一些基础操作命令还有些不适应,经常需要去翻查具体的指令,所以这篇文章用来记录常用的命令给自己作为查询">
+  <meta name="description" content="查阅性资料,自己老忘…">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git基础指令总结">
-<meta property="og:url" content="http://yoursite.com/2016/04/13/Git基础指令总结/index.html">
+<meta property="og:title" content="常见HTTP状态码">
+<meta property="og:url" content="http://yoursite.com/2016/04/19/常见HTTP状态码/index.html">
 <meta property="og:site_name" content="Bdlhy">
-<meta property="og:description" content="项目中必定会使用git,现在自己对git的一些基础操作命令还有些不适应,经常需要去翻查具体的指令,所以这篇文章用来记录常用的命令给自己作为查询">
-<meta property="og:updated_time" content="2016-04-13T05:56:15.916Z">
+<meta property="og:description" content="查阅性资料,自己老忘…">
+<meta property="og:updated_time" content="2016-04-19T07:04:30.636Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git基础指令总结">
-<meta name="twitter:description" content="项目中必定会使用git,现在自己对git的一些基础操作命令还有些不适应,经常需要去翻查具体的指令,所以这篇文章用来记录常用的命令给自己作为查询">
+<meta name="twitter:title" content="常见HTTP状态码">
+<meta name="twitter:description" content="查阅性资料,自己老忘…">
   
     <link rel="alternative" href="/atom.xml" title="Bdlhy" type="application/atom+xml">
   
@@ -193,11 +193,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-Git基础指令总结" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-常见HTTP状态码" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/04/13/Git基础指令总结/" class="article-date">
-  	<time datetime="2016-04-13T02:45:10.000Z" itemprop="datePublished">2016-04-13</time>
+      <a href="/2016/04/19/常见HTTP状态码/" class="article-date">
+  	<time datetime="2016-04-19T07:01:49.000Z" itemprop="datePublished">2016-04-19</time>
 </a>
     </div>
   
@@ -210,7 +210,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Git基础指令总结
+      常见HTTP状态码
     </h1>
   
 
@@ -226,8 +226,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>项目中必定会使用git,现在自己对git的一些基础操作命令还有些不适应,经常需要去翻查具体的指令,所以这篇文章用来记录常用的命令给自己作为查询<br><a id="more"></a></p>
-<h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><p>1.git remote -v //查看远程分支的git路径<br>2.git clone git@xxxxx.git<br>3.git status //查看当前版本的状态<br>4.git add xxx //添加当前修改的文件到暂存区<br>5.git commit -m ‘更新的内容描述’ //提交暂存区更改<br>6.git rm xxx //完全删除文件<br>7.git rm -cached xxx //仅在暂存区删除,保存文件在当前目录,不再跟踪<br>8.git mv oldname newname //重命名文件<br>9.git checkout -b [分支名] //创建新分支,新分支来自于当前分支<br>10.git checkout [分支名] //切换至分支<br>11.git merge dev //合并dev分支到当前分支<br>12.git branch //产看本地分支<br>13.git pull origin //更新远程代码到本地分支<br>14.git push origin [远端分支名] //push本地分支到远端分支,如果远端没有该分支则会自动创建<br>15.git branch -d [分支名] //删除本地分支</p>
+        <p>查阅性资料,自己老忘…</p>
+<a id="more"></a>
+<p>对于前端开发人员来说，首先需要了解1~5开头的HTTP状态码分别是什么含义：<br>1XX  表示消息<br>2XX  表示成功<br>3XX  表示重定向<br>4XX  表示请求错误<br>5XX  表示服务器端错误</p>
+<p>常见HTTP状态码<br><strong>200 OK</strong><br>表示请求成功 一切正常<br><strong>301 Moved Permanently</strong><br>重定向，客户请求的文档在其他地方，新的URL在Location头中给出，浏览器应该自动地访问新的URL<br><strong>302 Found</strong><br>临时重定向，类似于301，但新的URL应该被视为临时性的替代，而不是永久性的。<br><strong>304 Not Modified</strong><br>客户端有缓冲的文档并发出了一个条件性的请求。服务器告诉客户，原来缓冲的文档还可以继续使用。<br><strong>400 Bad Request</strong><br>请求出现语法错误。<br><strong>403 Forbidden</strong><br>资源不可用。<br><strong>404 Not Found</strong><br>无法找到指定位置的资源。<br><strong>405 Method Not Allowed</strong><br>请求方法（GET、POST、HEAD、Delete、PUT、TRACE等）对指定的资源不适用。<br><strong>500 Internal Server Error</strong><br>服务器遇到了意料不到的情况，不能完成客户的请求。<br><strong>501 Not Implemented</strong><br>服务器不支持实现请求所需要的功能。</p>
 
       
     </div>
@@ -237,18 +239,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/04/19/常见HTTP状态码/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          常见HTTP状态码
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/04/11/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Sass 基础总结</div>
+    <a href="/2016/04/13/Git基础指令总结/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Git基础指令总结</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
