@@ -4,17 +4,18 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Bdlhy</title>
+  <title>zepto 与 jQuery 的区别 | Bdlhy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Bdlhy">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="zepto总的来说与jquery基本没啥区别了,但是作为移动端的简化的jquery,zepto自然是与jquery有所不同的.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="zepto 与 jQuery 的区别">
+<meta property="og:url" content="http://yoursite.com/2016/04/22/zepto-与-jQuery-的区别/index.html">
 <meta property="og:site_name" content="Bdlhy">
-<meta property="og:description">
+<meta property="og:description" content="zepto总的来说与jquery基本没啥区别了,但是作为移动端的简化的jquery,zepto自然是与jquery有所不同的.">
+<meta property="og:updated_time" content="2016-04-22T11:18:06.959Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Bdlhy">
-<meta name="twitter:description">
+<meta name="twitter:title" content="zepto 与 jQuery 的区别">
+<meta name="twitter:description" content="zepto总的来说与jquery基本没啥区别了,但是作为移动端的简化的jquery,zepto自然是与jquery有所不同的.">
   
     <link rel="alternative" href="/atom.xml" title="Bdlhy" type="application/atom+xml">
   
@@ -192,65 +193,7 @@
 	</div>
 </nav>
 
-      <div class="body-wrap">
-  
-    <article id="post-FEkit常用命令与基础服务搭建" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/04/29/FEkit常用命令与基础服务搭建/" class="article-date">
-  	<time datetime="2016-04-29T08:32:40.000Z" itemprop="datePublished">2016-04-29</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/29/FEkit常用命令与基础服务搭建/">FEkit常用命令与基础服务搭建</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><code>fekit init</code> 注册fekit进项目文件中,把所有css,js文件放入src文件夹,然后通过主要js或者主要css文件进行集体require打包</p>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a  href="/2016/04/29/FEkit常用命令与基础服务搭建/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-zepto-与-jQuery-的区别" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-zepto-与-jQuery-的区别" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2016/04/22/zepto-与-jQuery-的区别/" class="article-date">
@@ -266,204 +209,78 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/22/zepto-与-jQuery-的区别/">zepto 与 jQuery 的区别</a>
+    <h1 class="article-title" itemprop="name">
+      zepto 与 jQuery 的区别
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
       
         <p>zepto总的来说与jquery基本没啥区别了,但是作为移动端的简化的jquery,zepto自然是与jquery有所不同的.</p>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
+<a id="more"></a>
+<p>注意:zepto官方下载的内容不完整,缺少很多重要的模块,在zepto build里面生成自己需要的js文件</p>
+<p>一.选择器区别<br>1 :text :checkbox :first 等等在 jQuery 里面很常用的选择器，Zepto 不支持<br>Zepto 是直接通过浏览器提供的 document.querySelectorAll 接口.添加selector模块后能够支持 部分 的 jQuery 选择器扩展:<br>:visible :hidden<br>:selected :checked<br>:parent<br>:first :last :eq<br>:contains :has</p>
+<p>2 Zepto的选择器表达式:[name=value]中value 必须用双引号”or单引号’括起来</p>
+<p>3 zepto在操作dom的selected和checked属性时尽量使用prop方法,因为prop方法会优先于attr</p>
+<p>4 Zepto 是根据标准浏览器写的，所以对于节点尺寸的方法只提供 width() 和 height()，省去了 innerWidth(),innerHeight(),outerWidth(),outerHeight()<br>具体宽高由盒模型决定.(隐藏元素无法获取宽高)</p>
+<p>5 zepto 的offset()方法<br>Zepto.js: 返回 top 、 left 、 width 、 height<br>jQuery: 返回 width 、 height</p>
 
       
-        <p class="article-more-link">
-          <a  href="/2016/04/22/zepto-与-jQuery-的区别/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
     </div>
     
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-常见HTTP状态码" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/04/19/常见HTTP状态码/" class="article-date">
-  	<time datetime="2016-04-19T07:01:49.000Z" itemprop="datePublished">2016-04-19</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+<nav id="article-nav">
+  
+    <a href="/2016/04/29/FEkit常用命令与基础服务搭建/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/19/常见HTTP状态码/">常见HTTP状态码</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>查阅性资料,自己老忘…</p>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a  href="/2016/04/19/常见HTTP状态码/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Git基础指令总结" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/04/13/Git基础指令总结/" class="article-date">
-  	<time datetime="2016-04-13T02:45:10.000Z" itemprop="datePublished">2016-04-13</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+          FEkit常用命令与基础服务搭建
         
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/13/Git基础指令总结/">Git基础指令总结</a>
-    </h1>
   
+    <a href="/2016/04/19/常见HTTP状态码/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">常见HTTP状态码</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>项目中必定会使用git,现在自己对git的一些基础操作命令还有些不适应,经常需要去翻查具体的指令,所以这篇文章用来记录常用的命令给自己作为查询<br>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a  href="/2016/04/13/Git基础指令总结/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
   
 </article>
 
 
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/04/11/hello-world/" class="article-date">
-  	<time datetime="2016-04-11T06:54:35.000Z" itemprop="datePublished">2016-04-11</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/11/hello-world/">Sass 基础总结</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>随着js模块化的学习，其实对应的，css也应该有更好的规范和简洁的写法，所以需要对sass进行基础的学习，适应未来的工作环境。</p>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a  href="/2016/04/11/hello-world/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
 
 
@@ -472,9 +289,6 @@
 
 
 
-
-  
-  
 </div>
       <footer id="footer">
   <div class="outer">
@@ -498,8 +312,8 @@
 		fancybox: true,
 		mathjax: true,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
