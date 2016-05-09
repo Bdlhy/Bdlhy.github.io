@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>元素居中与CSS盒模型 | Bdlhy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="元素居中方法总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="元素居中与CSS盒模型">
+<meta property="og:url" content="http://yoursite.com/2016/01/21/元素居中与CSS盒模型/index.html">
+<meta property="og:site_name" content="Bdlhy">
+<meta property="og:description" content="元素居中方法总结">
+<meta property="og:updated_time" content="2016-05-09T02:18:17.956Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="元素居中与CSS盒模型">
+<meta name="twitter:description" content="元素居中方法总结">
+  
+    <link rel="alternative" href="/atom.xml" title="Bdlhy" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/b.png" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Bdlhy</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">起步，于此</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						<li>Links</li>
+						
+						
+						<li>About</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/Bdlhy" title="github">github</a>
+					        
+								<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/li-hong-yi-40-26" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">自非初来乍到，但是技术尤生；且行且看且习，且记初心！</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Bdlhy</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="/img/b.png" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Bdlhy</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">起步，于此</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/Bdlhy" title="github">github</a>
+			        
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/li-hong-yi-40-26" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-元素居中与CSS盒模型" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/01/21/元素居中与CSS盒模型/" class="article-date">
+  	<time datetime="2016-01-21T14:58:48.000Z" itemprop="datePublished">2016-01-21</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      元素居中与CSS盒模型
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>元素居中方法总结<br><a id="more"></a></p>
+<h2 id="一、水平居中"><a href="#一、水平居中" class="headerlink" title="一、水平居中"></a>一、水平居中</h2><p>1.块元素水平居中：margin:0px auto;（任何当代浏览器上都有效，即使是IE6标准模式）<br>    这种情况下块元素需要设定具体width才能达到左右居中的效果。<br>    通过这条语句可以使块元素相对于其父元素水平居中，且自动排列于父元素上部。不适用于内联元素。<br>    example1:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div1"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">.div1&#123;</span><br><span class="line">	width: 50px;</span><br><span class="line">	height: 50px;</span><br><span class="line">	margin: 0 auto;</span><br><span class="line">	background: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>2、text-align:center外加内部元素display:inline:block<br>    这种情况可以有效的让块内元素迅速居中，缺点是每个行内块元素之间会出现4px的间隙。通过改变书写格式或者调整margin值可以修改<br>    具体方式参阅：<a href="http://www.w3cplus.com/css/fighting-the-space-between-inline-block-elements" target="_blank" rel="external">This link</a><br>    example2:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.div2&#123;</span><br><span class="line">	background: lightgreen;</span><br><span class="line">	height: 50px;</span><br><span class="line">	text-align: center;</span><br><span class="line">&#125;</span><br><span class="line">.div2 li&#123;</span><br><span class="line">	display: inline-block;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div2"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ul</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>a<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>b<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>c<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>d<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>e<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>f<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>3、浮动实现水平居中（其实与负margin方式类似）<br>    将包含内容的块儿通过左浮动后进行定位至正中；然后通过将块儿内的内容浮动起来向右定位50%（这个距离是块儿的一半）<br>    同时如果对外层容器进行高度设置后，可使用同样的方法达到垂直居中。<br>    example3:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">.div3&#123;</span><br><span class="line">	background: lightgreen;</span><br><span class="line">	height: 50px;</span><br><span class="line">	position: relative;</span><br><span class="line">&#125;</span><br><span class="line">.div3 ul&#123;</span><br><span class="line">	float: left;</span><br><span class="line">	position: relative;</span><br><span class="line">	left: 50%;</span><br><span class="line">&#125;</span><br><span class="line">.div3 li&#123;</span><br><span class="line">	float: left;</span><br><span class="line">	position: relative;</span><br><span class="line">	right: 50%;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div3"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ul</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>a<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>b<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>c<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>d<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>e<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>f<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>4.负边界<br>    原理：通过绝对定位把需要居中的元素定位在父级元素的中央位置，再通过负值margin移动元素一半的宽高达到目的，<br>          此时父级元素与居中元素的中心重合在一起。这种方式不光能够达到水平居中，垂直居中也同样适用！<br>    缺点：必须知道具体的宽度或者高度才能够反向margin<br>    example4:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">.div4&#123;</span><br><span class="line">	margin: 20px 50px;</span><br><span class="line">	width: 100px;</span><br><span class="line">	height: 100px;</span><br><span class="line">	position: relative;</span><br><span class="line">	background: lightgreen;</span><br><span class="line">&#125;</span><br><span class="line">.div4 div&#123;</span><br><span class="line">	top:50%;</span><br><span class="line">	left: 50%;</span><br><span class="line">	margin-top: -25px;</span><br><span class="line">	margin-left: -25px;</span><br><span class="line">	width: 50px;</span><br><span class="line">	height: 50px;</span><br><span class="line">	background: red;</span><br><span class="line">	position: absolute;</span><br><span class="line">&#125;		</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div4"</span>&gt;</span><span class="tag">&lt;<span class="name">div</span>&gt;</span>4<span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>5、flex布局达到水平或者垂直居中的效果<br>    这部分内容进行单独总结，这里应用最基础的flex布局可以达到水平或者垂直居中。此方法注意不同浏览器的兼容性，为CSS3最新方法布局。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">.div5&#123;</span><br><span class="line">	margin: 20px 50px;</span><br><span class="line">	width: 100px;</span><br><span class="line">	height: 100px;</span><br><span class="line">	background: lightgreen;</span><br><span class="line"></span><br><span class="line">	</span><br><span class="line">	display: box;</span><br><span class="line">	box-orient: horizontal;</span><br><span class="line">	box-pack: center;</span><br><span class="line">&#125;</span><br><span class="line">.div5 div&#123;</span><br><span class="line">	width: 50px;</span><br><span class="line">	height: 50px;</span><br><span class="line">	background: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div5"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span>5<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>6、width的fit-content属性与margin配合达到水平居中<br>    与上面相同，这也是一个新的width属性，这个属性可以解决水平居中，且不用特意去设定具体的宽度。<br>    这个方法最大的缺点是现在只能应用在chrome和firefox，其他浏览器暂时无法兼容。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">.div6&#123;</span><br><span class="line">	height: 50px;</span><br><span class="line">	background: lightgreen;</span><br><span class="line">&#125;</span><br><span class="line">.div6 ul&#123;</span><br><span class="line">	width: -moz-fit-content;</span><br><span class="line">	width:-webkit-fit-content;</span><br><span class="line">	width: fit-content;</span><br><span class="line">	margin: 0 auto;</span><br><span class="line">&#125;</span><br><span class="line">.div6 li&#123;</span><br><span class="line">	float: left;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div6"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ul</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>a<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>b<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>c<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>d<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>e<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>f<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="二、垂直居中"><a href="#二、垂直居中" class="headerlink" title="二、垂直居中"></a>二、垂直居中</h2><p>1、单行内容垂直居中<br>通过设置line-height与height等高即可<br>注：图片不适用这种情况，主要为文字，此处不举例说明了。<br>注：当具有多行内容时，可以同时放入一个span里，然后将其设置为display:inline-block然后设置等高行即可。</p>
+<p>2、模拟表格<br>将display设置为table-cell之后，由于表格元素默认居中所以设置vertical-align:middle后即可居中<br>注：同样不是直接运用于图片上，可将图片放入table-cell块儿内达到效果(且ie67不支持这种方式，需要运用上面介绍的负边界方式达到效果)<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">.div7&#123;</span><br><span class="line">	margin: 20px 50px;</span><br><span class="line">	height: 100px;</span><br><span class="line">	width: 100px;</span><br><span class="line">	background: lightgreen;</span><br><span class="line">	text-align: center;</span><br><span class="line">	display: table;</span><br><span class="line">&#125;</span><br><span class="line">.div7 div&#123;</span><br><span class="line">	display: table-cell;</span><br><span class="line">	vertical-align: middle;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div7"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2997908931,3785893858&amp;amp;fm=58"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>3、display:inline-block借助另外元素高度来垂直居中<br>通过设置另一个元素高度达到父元素高度100%，然后同时为inline-block的情况下设置vertical-align:middle;即可达成。<br>注：这种方法可以完成多张高度不确定的图片同时垂直居中。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">.div8 span&#123;</span><br><span class="line">	height: 100%;</span><br><span class="line">	display: inline-block;</span><br><span class="line">	vertical-align: middle;</span><br><span class="line">&#125;</span><br><span class="line">.div8 div&#123;</span><br><span class="line">	vertical-align: middle;</span><br><span class="line">	display: inline-block;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div8"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2997908931,3785893858&amp;amp;fm=58"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>补充：不仅span可以让其具有大小，同样可以使用很大的字体font-size或者一个空的图片来给图片高度达到垂直居中<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">.div9 &#123;</span><br><span class="line">	background: lightgreen;</span><br><span class="line">	display: table;</span><br><span class="line">&#125;</span><br><span class="line">.div9 div&#123;</span><br><span class="line">	font-size: 118px;</span><br><span class="line">	text-align: center;</span><br><span class="line">	vertical-align: middle;</span><br><span class="line">	display: table-cell;</span><br><span class="line">&#125;</span><br><span class="line">.div9 img&#123;</span><br><span class="line">	vertical-align: middle;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div9"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"http://ubmcmm.baidustatic.com/media/v1/0f0005yYIsGLBGDGfPud10.png"</span> <span class="attr">title</span>=<span class="string">""</span> <span class="attr">alt</span>=<span class="string">""</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">height</span>=<span class="string">"150"</span> <span class="attr">width</span>=<span class="string">"233"</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2997908931,3785893858&amp;amp;fm=58"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>总结：总结的很多水平居中的方式其实都可以应用于垂直居中，特别着重注意的就是负margin值这种情况，因为不仅可以解决水平垂直两项问题。同时，在垂直居中很多情况下使用的vertical-align:middle不能兼容的情况下都可以使用负margin这种手段达到居中的补充手法。<br>另外，对于多内容的垂直居中，重点要掌握的其实是display:table-cell属性的用法，还有就是可以通过空元素撑开父元素的高，来给其他需要剧中的元素一个高度的标尺（垂直居中第三种）。</p>
+<h2 id="CSS盒模型介绍"><a href="#CSS盒模型介绍" class="headerlink" title="CSS盒模型介绍"></a>CSS盒模型介绍</h2><p>1、盒模型四个边界：<br>content：由该元素的宽高决定矩形大小，没有上右下左；<br>padding：填充，内边距，向内挤压元素的边界。<br>border：元素的边框，可以设置其宽度。<br>margin：元素外边距。</p>
+<p>2、margin：</p>
+<p>I、margin不是table类型的元素，以及 table 类型中table-caption,table和inline-table 这3类。例TD、TR、TH等，margin是不适用的。 并且，对于行内非替换元素（例如 SPAN），垂直方向的 margin 不起作用。</p>
+<p>II、垂直方向上的不同元素的相邻的 margin 在某些情况下，会发生折叠的现象。</p>
+<p>外边距折叠：<br>Collapsing margins，即外边距折叠，指的是毗邻的两个或多个外边距 (margin) 会合并成一个外边距。</p>
+<p>（1）两个或多个毗邻的普通流中的块元素垂直方向上的 margin 会折叠：</p>
+<p>原因：没有被非空内容、padding、border 或 clear 分隔开。<br>一个元素与它子元素的第一个子元素margin-top相邻；当一个元素height为auto时与其最后一个子元素margin-bottom相邻。<br>折叠后 margin 的计算：<br>I、符号相同时两相邻元素margin值取绝对值较大的值作为两者margin值。<br>II、符号不相同的时候取正值最大与负值最小进行直接相加。（相当于挤开正值那么宽，再拉近负值那么宽）<br>复杂实例：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"margin:50px 0; background-color:green; width:50px;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"margin:-60px 0;"</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"margin:150px 0;"</span>&gt;</span>A<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"margin:-100px 0; background-color:green; width:50px;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"margin:-120px 0;"</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"margin:200px 0;"</span>&gt;</span>B<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>根据有正有负时的计算规则，正值的最大值为 200px，负值中绝对值最大的是 -120px，所以，最终折叠后的 margin 应该是 200 + (-120) = 80px。</p>
+<p>（2）浮动元素、inline-block 元素、绝对定位元素的 margin 不会和垂直方向上其他元素的 margin 折叠</p>
+<p>（3）创建了块级格式化上下文的元素，不和它的子元素发生 margin 折叠（与第二条内容重合）</p>
+<p>注：块级格式化上下文至少满足以下条件之一：<br>float 的值不为 none<br>position 的值不为 static 或 relative<br>display 的值为 table-cell、table-caption、inline-block、flex 或 inline-flex<br>overflow 的值不为 visiable</p>
+<p>（4）元素自身的 margin-bottom 和 margin-top 相邻时也会折叠，即没有内容填充的情况下margin撑不开元素。</p>
+<p>III、border：</p>
+<p>1、border 包含3个部分，’border-width’，’border- color’，’border-style’，分别用来设置它的宽度，颜色和样式。<br>其中border-width 可用值有‘thin’，‘medium’，‘thick’，以及常用的数值带单位的宽度值。<br>其中border-style 默认值是none特性的值。可用值有：’none’，’hidden’，’dotted’，’dashed’，’solid’，’double’，’groove’，’ridge’，’inset’等。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/01/24/HTML基础布局/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          HTML基础布局
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Bdlhy
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

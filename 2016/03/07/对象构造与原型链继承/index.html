@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>对象构造理解 | Bdlhy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="对象的特性">
+<meta property="og:type" content="article">
+<meta property="og:title" content="对象构造理解">
+<meta property="og:url" content="http://yoursite.com/2016/03/07/对象构造与原型链继承/index.html">
+<meta property="og:site_name" content="Bdlhy">
+<meta property="og:description" content="对象的特性">
+<meta property="og:updated_time" content="2016-05-09T02:14:05.790Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="对象构造理解">
+<meta name="twitter:description" content="对象的特性">
+  
+    <link rel="alternative" href="/atom.xml" title="Bdlhy" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/b.png" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Bdlhy</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">起步，于此</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						<li>Links</li>
+						
+						
+						<li>About</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/Bdlhy" title="github">github</a>
+					        
+								<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/li-hong-yi-40-26" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">自非初来乍到，但是技术尤生；且行且看且习，且记初心！</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Bdlhy</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="/img/b.png" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Bdlhy</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">起步，于此</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/Bdlhy" title="github">github</a>
+			        
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/li-hong-yi-40-26" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-对象构造与原型链继承" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/07/对象构造与原型链继承/" class="article-date">
+  	<time datetime="2016-03-07T11:35:17.000Z" itemprop="datePublished">2016-03-07</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      对象构造理解
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="对象的特性"><a href="#对象的特性" class="headerlink" title="对象的特性"></a>对象的特性</h2><a id="more"></a>
+<h3 id="一、数据属性"><a href="#一、数据属性" class="headerlink" title="一、数据属性"></a>一、数据属性</h3><ol>
+<li><strong>[[Configurable]]:</strong>表示能否通过<code>delete</code>删除属性从而重新定义属性，能否修改属性的特性，或者能否把属性修改为访问器属性。默认值<code>true</code>。</li>
+<li><strong>[[Enumerable]]:</strong>表示能否通过<code>for-in</code>循环返回属性（即是否可枚举）。默认值<code>true</code>。</li>
+<li><strong>[[Writable]]:</strong>表示能否修改属性的值。默认<code>true</code>。</li>
+<li><strong>[[Value]]:</strong>包含这个属性的数据值。读取属性值的时候，从这个位置读；写入属性的时候，把新值保存在这个位置。默认值<code>undefined</code>。<h3 id="二、访问器属性"><a href="#二、访问器属性" class="headerlink" title="二、访问器属性"></a>二、访问器属性</h3></li>
+<li><strong>[[Configurable]]:</strong>表示能否通过<code>delete</code>删除属性从而重新定义属性，能否修改属性的特性，或者能否把属性修改为访问器属性。默认值<code>true</code>。</li>
+<li><strong>[[Enumerable]]:</strong>表示能否通过<code>for-in</code>循环返回属性（即是否可枚举）。默认值<code>true</code>。</li>
+<li><strong>[[Get]]:</strong>在读取属性时调用的函数。默认值<code>undefined</code>。</li>
+<li><strong>[[Set]]:</strong>在写入属性时调用的函数。默认值<code>undefined</code>。</li>
+</ol>
+<p>要修改属性默认的特性，必须使用ECMAScript5的<code>Object.defineProperty()</code>方法。这个方法接收三个参数：属性所在的对象、属性的名字和一个描述符对象。其中描述符对象的属性必须是：<code>configurable</code>、<code>enumerable</code>、<code>writable</code>、<code>value</code>、<code>get</code>和<code>set</code>。设置其中的一个或多个值，可以修改对应的特性值。<br>注意：访问器属性的修改不是直接修改原对象属性的修改，而是一个单独的访问器属性，其取名与原对象中属性名并不相同。</p>
+<h2 id="对象的创建"><a href="#对象的创建" class="headerlink" title="对象的创建"></a>对象的创建</h2><h3 id="一、工厂模式"><a href="#一、工厂模式" class="headerlink" title="一、工厂模式"></a>一、工厂模式</h3><p>描述：直接用函数来封装以特定接口创建对象的细节。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function creatObject(name, age, job)&#123;</span><br><span class="line">   	var o = new Object();</span><br><span class="line">       o.name = name;</span><br><span class="line">       o.age = age;</span><br><span class="line">       o.job = job;</span><br><span class="line">       o.sayName = function()&#123;</span><br><span class="line">       	alert(this.name);</span><br><span class="line">       &#125;;</span><br><span class="line">       return o;</span><br><span class="line">   &#125;</span><br><span class="line">   </span><br><span class="line">   var person1 = creatObject('Bob',20,'driver');</span><br><span class="line">   var person2 = creatObject('Greg',27,'doctor');</span><br></pre></td></tr></table></figure></p>
+<h3 id="二、构造函数模式"><a href="#二、构造函数模式" class="headerlink" title="二、构造函数模式"></a>二、构造函数模式</h3><p>描述：类似Object或Array的构造函数，不显式地创建对象，通过new构造。<br>注：函数开头为大写开头。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function Person(name, age, job)&#123;</span><br><span class="line">   	this.name = name;</span><br><span class="line">       this.age = age;</span><br><span class="line">       this.job = job;</span><br><span class="line">       this.sayName = function()&#123;</span><br><span class="line">       	return this.name;</span><br><span class="line">       &#125;;</span><br><span class="line">   &#125;</span><br><span class="line">   </span><br><span class="line">   var person1 = new Person('Bob',20,'driver');</span><br><span class="line">   var person2 = new Person('Greg',27,'doctor');</span><br><span class="line">   </span><br><span class="line">   alert(person1.constructor == Person); //true</span><br><span class="line">   alert(person1 instanceof Object); //true</span><br><span class="line">   alert(person1 instanceof Person); //true</span><br></pre></td></tr></table></figure></p>
+<p>构造函数的缺点。每一个新的实例其方法都是独立建造的。不同实例上，其方法是不同的。</p>
+<h3 id="三、原型模式"><a href="#三、原型模式" class="headerlink" title="三、原型模式"></a>三、原型模式</h3><p>即在原型对象上创建属性和方法，每一个实例继承原型对象上的属性和方法。<br>缺点，原型对象上的属性在每一个实例上共享，所以其中的引用类型属性都会出现一个实例修改会影响其他实例。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">var Person = function()&#123;</span><br><span class="line">    this.name = "ABC";</span><br><span class="line">&#125;</span><br><span class="line">Person.prototype = &#123;</span><br><span class="line">    name: "Bdlhy",</span><br><span class="line">    age: 21,</span><br><span class="line">    sayName: function()&#123;</span><br><span class="line">        console.log(this.name)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">var person = new Person();</span><br><span class="line">// 在设计之初是不允许直接访问原型链的</span><br><span class="line">// 可以用 isPrototypeOf 来测试 person 的原型链</span><br><span class="line">console.log(Person.prototyoe.isPrototypeOf(person))</span><br><span class="line">// EC5 增加了方法可以直接获取 Person.prototype</span><br><span class="line">console.log(Object.getPrototypeOf(person))</span><br><span class="line">// 这里有三个角色</span><br><span class="line">构造函数：Person</span><br><span class="line">构造函数的原型链：简称 PerPro</span><br><span class="line">实例：person</span><br><span class="line">// 关系</span><br><span class="line">Person.prototype = PerPro;</span><br><span class="line">person.prototype = PerPro;</span><br><span class="line">PerPro.constructor = Person;</span><br><span class="line">// 基于上面这种关系 person 在想要调用 name 的属性先要访问 Person ，Person 有该属性则返回，且这个时候 PerPro 上的 name 是没有被覆盖的，如果要访问 age，则需要先访问 Person，发现 Person 没有，则去访问 PerPro,发现有则返回。</span><br><span class="line">// in 方法不能检验出属性是来自于构造器还是原型链</span><br><span class="line">// 所以使用 for-in 来遍历会遍历出原型链的方法</span><br><span class="line">// EC5 的 key 和 getOwnPropertyNames 可以达到同样的效果</span><br><span class="line">var keys = Object.getOwnPropertyNames(Person.prototype);    // ['name', 'age', 'sayName']</span><br><span class="line">// 检验取出来的值是来自于对象实例还是原型可以通过 hasOwnProperty 来检验</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/03/18/Js事件/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          Js事件
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/03/05/js字符串与数字之间相互转换/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">js字符串与数字之间相互转换</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Bdlhy
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
