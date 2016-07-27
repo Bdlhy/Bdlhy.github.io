@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fireball</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;	
+		}
+		canvas{
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			cursor: crosshair;
+			position: absolute;
+		}
+		#target {
+			width: 100px;
+			height: 100px;
+			background: lightblue;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="firebox"></canvas>
+	<script>
+		var bgColor = '#111',gravity = 0.03,tailColor = '#f73',moving = false,fireballs = {},tails = {}, showHow = true, time = 0;
+		var mouse = {x: 0, y: 0, d:0}, point = {x: 0, y: 0}, width, height;
+		var canvas = document.getElementById('firebox');
+		var ct = canvas.getContext('2d');
+		//火球构造函数
+		var newFireball = (function(){
+			var nextindex = 0;
+			return function(x, y, xv, yv, life){
+				fireballs[++nextindex] = {
+					index: nextindex,
+					x: x,
+					y: y,
+					xv: xv,
+					yv: yv,
+					life: life
+				}
+			}
+		})();
+		//火焰尾巴构造函数
+		var newTail = (function(){
+			var nextindex = 0;
+			return function(x, y, r, o, color, xv, yv, rv, ov){
+				tails[++nextindex] = {
+					index: nextindex,
+					x: x,
+					y: y,
+					r: r,
+					o: o,
+					color: color,
+					xv: xv,
+					yv: yv,
+					rv: rv,
+					ov: ov
+				}
+			}
+		})();
+		//事件改变区
+		(window.onresize = function(){
+			width = canvas.width = canvas.clientWidth;
+			height = canvas.height = canvas.clientHeight;
+		})();
+		window.onmousemove = function(e){
+			mouse.x = e.clientX;
+			mouse.y = e.clientY;
+			var dx = mouse.x - point.x,
+				dy = mouse.y - point.y;
+			mouse.d = Math.sqrt(dx*dx + dy*dy);
+		}
+		window.onmousedown = function(){
+			point.x = mouse.x;
+			point.y = mouse.y;
+			moving = true;
+			showHow = false;
+		}
+		window.onmouseup = function(){
+			if(moving){
+				newFireball(
+					mouse.x,
+					mouse.y,
+					(point.x - mouse.x) * 0.03,
+					(point.y - mouse.y) * 0.03,
+					500
+				);
+			}
+			moving = false;
+		}
+		//间隔绘制
+		window.requestAnimationFrame(loop = function(){
+			ct.globalCompositeOperation = 'source-over';
+			ct.globalAlpha = 1;
+			ct.fillStyle = bgColor;
+			ct.fillRect(0, 0, width, height);
+
+			if(moving){//拉动绘制线条
+    			var color = Math.floor(30+mouse.d/2);
+    			ct.strokeStyle = 'rgb(' + color + ',' + color + ',' + color + ')';
+    			ct.lineWidth = 4;
+				ct.beginPath();
+				ct.moveTo(point.x, point.y);
+				ct.lineTo(mouse.x, mouse.y);
+			    ct.lineCap = 'round';
+			    ct.stroke();
+			}
+
+			if(showHow){//演示动画
+				var showObj = {x: 0, y: 0, r: 0, a: 0};
+				point.x = Math.ceil(width / 2);
+				point.y = Math.ceil(height / 2);
+				if(time < 20){
+					showObj.x = 0;
+					showObj.y = 0;
+					showObj.r = 50 - time * 2;
+					showObj.a = time / 20;
+				}else if (time < 100){
+					showObj.x = (time-20) * 2;
+					showObj.y = (time-20);
+					showObj.r = 10;
+					showObj.a = 1;
+				}else if (time < 110){
+					showObj.x = 160;
+					showObj.y = 80;
+					showObj.r = 10 + (time-100) * 2;
+					showObj.a = 1 - (time-100)/10;
+				}else if (time < 150){
+					showObj.x = 160;
+					showObj.y = 80;
+					showObj.r = 30;
+					showObj.a = 0;
+				}
+				var dx = showObj.x;	
+					dy = showObj.y;
+					d = Math.sqrt(dx * dx + dy * dy);
+				if (time > 20 && time < 100){
+					ct.globalCompositeOperation = 'source-over';
+					ct.globalAlpha = 1;
+    				var color = Math.floor(30+d/2);
+    				ct.strokeStyle = 'rgb(' + color + ',' + color + ',' + color + ')';
+    				ct.beginPath();
+    				ct.lineWidth = 4;
+    				ct.moveTo(point.x, point.y);
+    				ct.lineTo(point.x + showObj.x, point.y + showObj.y);
+    				ct.lineCap = 'round';
+    				ct.stroke();
+				}
+				if (time < 150){
+					ct.globalCompositeOperation = 'source-over';
+					ct.globalAlpha = showObj.a;
+					ct.beginPath();
+					ct.lineWidth = 2;
+      				ct.strokeStyle = '#aaa';
+					ct.arc(showObj.x + point.x,showObj.y + point.y,showObj.r,0,Math.PI * 2,true);
+					ct.stroke();
+				}
+				if (time == 100){
+					newFireball(
+						showObj.x + point.x,
+						showObj.y + point.y,
+						-showObj.x * 0.03,
+						-showObj.y * 0.03,
+						240
+					);
+				}
+				time = (time + 1) % 200;
+			}
+
+			ct.globalCompositeOperation = 'lighter';
+			for(var i in tails){
+				var tail = tails[i];
+				ct.beginPath();
+				ct.fillStyle = tail.color;
+				ct.globalAlpha = tail.o;
+				ct.arc(tail.x, tail.y, tail.r, 0, Math.PI * 2, true);
+				ct.fill();
+			}
+			for(var i in tails){
+				var tail = tails[i];
+				tail.x += tail.xv;
+				tail.y += tail.yv;
+				tail.r += tail.rv;
+				tail.o += tail.ov;
+				tail.r < 0 ? delete tails[tail.index] : null;
+				tail.o < 0 ? delete tails[tail.index] : null;
+			}
+
+			for(var i in fireballs){
+				var fire = fireballs[i];
+				var tailNum = Math.sqrt(fire.xv * fire.xv + fire.yv * fire.yv)/5;
+				tailNum = tailNum < 1 ? 1 : tailNum;
+				var tailInt = Math.ceil(tailNum);
+				var tailDif = tailInt / tailNum;
+				for(var j = 0; j < tailInt; j++){
+					newTail(
+						fire.x - fire.xv * j / tailInt,
+						fire.y - fire.yv * j / tailInt,
+						7,
+						tailDif,
+						tailColor,
+						Math.random()*0.6-0.3,
+						Math.random()*0.6-0.3,
+						-0.3,
+						-0.05 * tailDif
+					);
+				}
+				fire.x += fire.xv;
+				fire.y += fire.yv;
+				fire.yv += gravity;
+				//碰撞检测
+				if(fire.y < 7){
+					fire.y = 7;
+					fire.yv = -fire.yv;
+				}else if (fire.y > height - 7){
+					fire.y = height - 7;
+					fire.yv = -fire.yv;;
+				}
+				if(fire.x < 7){
+					fire.x = 7;
+					fire.xv = -fire.xv;
+				}else if (fire.x > width - 7){
+					fire.x = width - 7;
+					fire.xv = -fire.xv;;
+				}
+				--fire.life < 0 ? delete fireballs[fire.index] : null;
+			}
+
+			requestAnimationFrame(loop);
+		});
+
+	</script>
+</body>
+</html>
