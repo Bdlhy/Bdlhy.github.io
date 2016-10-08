@@ -1,6 +1,6 @@
 
 
-var stayTogether = (new Date("2016/09/03 23:00:00")).getTime();
+var stayTogether = (new Date("2016/09/03 21:58:00")).getTime();
 var $timer = $('#timer h2');
 var $targets = $('.next-timer');
 $targets.each(function(index, el) {
