@@ -33,3 +33,7 @@ function reTime(){
 }
 reTime();
 var intervalTime = setInterval(reTime, 1000);
+
+var temp = (new Date()).getTime()-(new Date("2016/09/03 21:58:00")).getTime();
+var	days = Math.floor(temp/(24*3600*1000));
+console.log(days);
