@@ -33,5 +33,3 @@ function reTime(){
 }
 reTime();
 var intervalTime = setInterval(reTime, 1000);
-
-exports.intervalTime = intervalTime;

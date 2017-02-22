@@ -1,0 +1,17 @@
+body{
+	background: #5bc0de;
+	color: #fff;
+}
+.head-title{
+	margin-top: 110px;
+}
+.small-title{
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+#timer h2{
+	padding: 0;
+}
+.bottom-box{
+	margin-top: 30px;
+}

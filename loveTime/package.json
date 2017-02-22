@@ -1,0 +1,18 @@
+{
+  "name": "lovetime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mylove.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bdlhy",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.25.0",
+    "gulp": "^3.9.1",
+    "jsx-loader": "^0.13.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2"
+  }
+}
