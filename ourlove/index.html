@@ -14,20 +14,14 @@
 	<article id="main" class="main">
 		<h2>Stay Together</h2>
 		<section class="total">{{totalTime}}</section>
-		<section class="next">
+		<section v-if="timeList.length > 0" class="next">
 			<h2>下一纪念日:</h2>
 			<section class="next-day">
 				<h3 class="left-msg">{{timeList[0].name}}</h3><h3 class="right-msg">{{timeList[0].next}}</h3>
 			</section>
 			<ul class="next-list">
-				<li>
-					<h4 class="left-msg">{{timeList[1].date}}</h4><div class="right-msg">{{timeList[1].name}}</div>
-				</li>
-				<li>
-					<h4 class="left-msg">{{timeList[2].date}}</h4><div class="right-msg">{{timeList[2].name}}</div>
-				</li>
-				<li>
-					<h4 class="left-msg">{{timeList[3].date}}</h4><div class="right-msg">{{timeList[3].name}}</div>
+				<li v-for="(item, index) in timeList" v-if="index > 0 && index < 4">
+					<h4 class="left-msg">{{item.date}}</h4><div class="right-msg">{{item.name}}</div>
 				</li>
 			</ul>
 		</section>

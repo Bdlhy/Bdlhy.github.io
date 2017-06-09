@@ -90,6 +90,9 @@ var main = new Vue({
 			name: '妈妈的生日',
 			date: '2017/06/27'
 		}, {
+			name: '300天纪念日',
+			date: '2017/06/30'
+		}, {
 			name: '十个月纪念',
 			date: '2017/07/03'
 		}, {
@@ -127,7 +130,7 @@ var main = new Vue({
 	methods: {
 		getStayTime: function(temp, ifTotal) {
 			var days = Math.floor(temp / (24 * 3600 * 1000));
-			days < 10 ? days = '0' + days : null; 
+			days < 10 ? days = '0' + days : null;
 			temp = temp % (24 * 3600 * 1000);
 
 			var hours = Math.floor(temp / (3600 * 1000));
